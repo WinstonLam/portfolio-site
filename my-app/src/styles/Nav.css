@@ -1,0 +1,17 @@
+.side-nav{
+    height: 100%;
+    width: 30%;
+    
+    background-color: rgba(181, 172, 172, 0.374);
+    border-radius: 4rem 0px 0px 4rem;
+    position: fixed;
+    right:0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+
+}
+
+.side-nav.checked{
+    transform: translateX(0%);
+}
