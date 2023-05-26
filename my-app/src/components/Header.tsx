@@ -14,8 +14,8 @@ const Header = () => {
         <>
         <div className='header'>
         <div className='header-inner'>
-        <div className='header-box1'><h1>Winston Lam</h1></div>
-        <div className='header-box2'><h1>LOGO</h1></div>
+        <div className='header-box1'><h1>Winston</h1></div>
+        <div className='header-box2'></div>
         <div className='header-box3'>
         <div className={`hamburger ${isChecked ? 'checked' : ''}`} onClick={handleOnClick}>
             <div className="top-bun"></div>

@@ -1,15 +1,23 @@
-h1{
-    color: #04420E
+.header-box1 h1{
+    color: #04420E;
+    font-size: 20px;
 }
 .header{
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     box-shadow: 0px 4px 4px 2px rgba(13, 13, 13, 0.49);
+    background-color: #f1f1f1;
     width: 100%;
-    height: 10%;
+    height: 7%;
+    min-width: 300px;
 }
 .header-inner{
     width: 90%;
+    max-width: 800px;
+    height: 100%;
     flex-direction: row;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -26,17 +34,17 @@ h1{
 }
 
 .hamburger div {
-    width: 3em;
-    height: 7px;
+    width: 25px;
+    height: 4px;
     border-radius: 3px;
     background-color: #04420E;
-    margin-top: 8px;
+    margin-top: 5px;
     transition: all 0.3s ease-in-out;
   }
 
 .hamburger.checked .top-bun {
-    transform: rotate(-45deg);
-    margin-top: 25px;
+    transform: rotate(-45deg) translate(-7px, 6px) ;
+    
 }
 
 .hamburger.checked .bottom-bun {
@@ -45,8 +53,8 @@ h1{
 }
 
 .hamburger.checked .meat {
-    transform: rotate(45deg);
-    margin-top: -7px;
+    transform: rotate(45deg) ;
+
 }
 
 .hamburger.checked + .nav {

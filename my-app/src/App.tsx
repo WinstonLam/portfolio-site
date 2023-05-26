@@ -8,6 +8,8 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      {/* div with height of 500px */}
+      <div style={{height: '500px'}}></div>
     </div>
   );
 }
