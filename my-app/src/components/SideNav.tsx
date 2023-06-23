@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../styles/Nav.css';
 
 interface SideNavProps {
@@ -6,7 +6,6 @@ interface SideNavProps {
   }
 
 const SideNav: React.FC<SideNavProps> = ({checked}) => {
-
 
     return (
         <>
