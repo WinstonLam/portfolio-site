@@ -10,19 +10,35 @@ const Hero = () => {
 
             <div className="home">
 
+
+
                 <div className="home-inner">
-                    <ParticlesBackdrop />
+
                     <div className="home-box1">
                         <div className="home-box1-greet">
-                            <p>------ Hi there!</p>
+                            <div className="colors" >
+                                <div className="color1" />
+                                <div className="color2" />
+                                <div className="color3" />
+                                <div className="color4" />
+                            </div>
+                            <div className="text">
+                                <p>Hi there!</p>
+                            </div>
                         </div>
                         <div className="home-box1-name">
                             <h1>My name is <span className="highlight">Winston</span> Lam</h1>
                         </div>
                         <div className="home-box1-desc">
-                            <p>I am a Software Enineer graduated at the University of Amsterdam.
-                                Specializing in full-stack development, cloud computing, and blockchain.
-                            </p>
+                            <div className="text">
+                                <p>I am a <span className="highlight">Software Enineer</span> graduated at the <span className="highlight">University of Amsterdam</span>.
+                                    Specializing in full-stack development, cloud computing, and blockchain.
+                                </p>
+                            </div>
+                            <div>
+                                <button className="button">About Me</button>
+                            </div>
+
                         </div>
                     </div>
                     <div className="home-box2">
@@ -38,3 +54,4 @@ const Hero = () => {
 }
 
 export default Hero;
+

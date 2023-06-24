@@ -41,10 +41,51 @@
 }
 
 .home-box1-greet{
+    height: 10%;
     width: 100%;
     margin-left: 15%;
     display: flex;
     font-size: 30px;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.home-box1-greet .colors, .home-box1-desc .colors{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+}
+.color1, .color2, .color3, .color4{
+    margin: 0 2% 0 2%;
+    width: 5%;
+    height: 12%;
+    min-width: 50px;
+    min-height: 12px;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.color1{
+    background-color: var(--primary-color);
+
+}
+
+.color2{
+    background-color: var(--second-color);
+}
+
+.color3{
+    background-color: var(--third-color);
+}
+
+.color4{
+    background-color: var(--fourth-color);
+}
+
+.home-box1-greet .text{
+    display: flex;
+    margin: 0 0 0 2%;
 }
 
 .home-box1-name{
@@ -54,18 +95,24 @@
     font-size: 35px;
 }
 
-.home-box1-name .highlight{
+.highlight{
     color: var(--primary-color);
 }
 
 .home-box1-desc{
     width: 85%;
-    margin-left: 3%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: left;
+}
+
+.home-box1-desc .text{
+    margin-left: 3%;
     font-size: 25px;
 }
+
+
 
 .home-box2-circle {
     display: flex;
@@ -85,3 +132,66 @@
     width: 15%;
     max-width: 210px;
 }
+
+.particles-container {
+    height: 100px; 
+  }
+
+#tsparticles {   
+    height: 100vh;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+  }
+
+  .home-box1-desc .button {
+    width: 50%;
+    position: relative;
+    background-color: var(--second-color);
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: var(--primary-color) -4px 4px 0 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.05s ease-in-out;
+}
+
+.home-box1-desc .button:hover {
+    background-color: var(--second-color) ;
+}
+
+.home-box1-desc .button:active  {
+    box-shadow: black -2px 2px 0 0;
+    transform: translate(-2px, 2px);
+}
+
+
+.home-box1-desc .button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.home-box1-desc .button:hover::after {
+    opacity: 0.1; 
+}
+
