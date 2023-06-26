@@ -19,65 +19,34 @@ const Hero = () => {
         }
     };
 
-    useEffect(() => {
-        setLoaded(true);
-        window.addEventListener('resize', () => { windowResize(); circleResize(); });
-
-        return () => {
-            window.removeEventListener('resize', () => { windowResize(); circleResize(); });
-        }
-    }, []);
-
-    let titleClass = 's';
-    if (windowWidth > 1200) {
-        titleClass = 'l';
-    } else if (windowWidth > 600) {
-        titleClass = 'm';
-    }
+  
 
     return (
-        <>
-            <div className={`hero-${titleClass}`}>
-                {/* <div className="particles-container">
-                <ParticlesBackdrop/>
-            </div> */}
-                <div className={`hero-inner-${titleClass}`}>
-
-                    <div className={`hero-box1${titleClass !== 'l' ? "-ms" : ""}`}>
-                        <div className="hero-box1-inner1"></div>
-                        <div className="hero-box1-inner2"></div>
-                        <div className="hero-box1-inner3">
-                            <p>Hi there!
-                                My name is Winston Lam  </p>
-                            <img src={require("../images/user.png")} alt="emojuseri" />
+  
+            <div className="hero">
+                <div className="hero-inner">
+                    <div className="hero-box1">
+                    <div className="hero-box1-greet">
+                            <div className="colors" >
+                                <div className="color1" />
+                                <div className="color2" />
+                                <div className="color3" />
+                                <div className="color4" />
+                            </div>
+                            <div className="text">
+                                <p>About Me</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className={`hero-box2${titleClass !== 'l' ? "-ms" : ""}`}>
-
-                        <div className="title"> <h1>Winston Lam</h1></div>
                         <div className="hero-circle">
-
-                            {/* import image from images folder */}
-                            <img className={`${loaded ? 'fadeIn' : ''}`} src={require("../images/business-man-cartoon-character-png.webp")} alt="hero-circle" />
+                            <img className={`${loaded ? 'fadeIn' : ''}`} src={require("../images/pf.jpeg")} alt="hero-circle" />
                         </div>
-                        <div className={`hero-bar-${titleClass}`}>
-
-                            <div className="hero-bar-box1">GitHub</div>
-                            <div className="hero-bar-box2">LinkedIn</div>
-                            <div className="hero-bar-box3">Slack</div>
-                        </div>
-                    </div>
-                    <div className={`hero-box3${titleClass !== 'l' ? "-ms" : ""}`}>
-                        <div className="hero-box3-inner1">
-                            {/* display svg image */}
-
-                        </div>
-                        <div className="hero-box3-inner2">qwe</div>
-                        <div className="hero-box3-inner3">qwe</div>
-                    </div>
+            
+                     </div>
+                    <div className="hero-box2">
                 </div>
             </div>
-        </>
+            </div>
+ 
     );
 };
 

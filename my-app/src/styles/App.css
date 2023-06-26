@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #04420E;
-  --second-color: #EFEEE3;
-  --third-color: #828456;
-  --fourth-color: #007499;
-  --fifth-color: #ffffff;
+  --primary-color: rgb(4, 66, 14);
+  --second-color: rgb(239, 238, 227);
+  --third-color: rgb(130, 132, 86);
+  --fourth-color: rgb(0, 116, 153);
+  --fifth-color: rgb(255, 255, 255);
 }
 
 .App {

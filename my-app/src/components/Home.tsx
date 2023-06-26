@@ -1,5 +1,6 @@
 import React from "react";
 import ParticlesBackdrop from "./ParticlesBackdrop";
+import { Link } from 'react-scroll';
 
 
 import "../styles/Home.css";
@@ -36,7 +37,10 @@ const Hero = () => {
                                 </p>
                             </div>
                             <div>
-                                <button className="button">About Me</button>
+                                <Link to="hero" smooth={true} duration={1000}>
+                                    <button className="button">About Me</button>
+                                </Link>
+
                             </div>
 
                         </div>
