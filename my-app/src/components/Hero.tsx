@@ -19,34 +19,35 @@ const Hero = () => {
         }
     };
 
-  
+
 
     return (
-  
-            <div className="hero">
-                <div className="hero-inner">
-                    <div className="hero-box1">
-                    <div className="hero-box1-greet">
-                            <div className="colors" >
-                                <div className="color1" />
-                                <div className="color2" />
-                                <div className="color3" />
-                                <div className="color4" />
-                            </div>
-                            <div className="text">
-                                <p>About Me</p>
-                            </div>
-                        </div>
-                        <div className="hero-circle">
-                            <img className={`${loaded ? 'fadeIn' : ''}`} src={require("../images/pf.jpeg")} alt="hero-circle" />
-                        </div>
-            
-                     </div>
-                    <div className="hero-box2">
+        <div className="hero-inner">
+            <div className="hero-box1">
+
+                <div className="hero-circle">
+                    <img className={`${loaded ? 'fadeIn' : ''}`} src={require("../images/pf.jpeg")} alt="hero-circle" />
+                </div>
+
+            </div>
+            <div className="hero-box2">
+                <div className="hero-box2-inner">
+                    <div className="colors" >
+                        <div className="color4" />
+                        <div className="color2" />
+                        <div className="color1" />
+                        <div className="color3" />
+
+                    </div>
+                    <div className="title">
+                        <h1>About Me</h1>
+                    </div>
+                    <div className="text">
+                        <p>I am a Software Enineer graduated at the University of Amsterdam.</p>
+                    </div>
                 </div>
             </div>
-            </div>
- 
+        </div>
     );
 };
 

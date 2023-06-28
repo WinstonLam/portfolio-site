@@ -18,9 +18,9 @@ const Hero = () => {
                     <div className="home-box1">
                         <div className="home-box1-greet">
                             <div className="colors" >
-                                <div className="color1" />
-                                <div className="color2" />
                                 <div className="color3" />
+                                <div className="color2" />
+                                <div className="color1" />
                                 <div className="color4" />
                             </div>
                             <div className="text">
