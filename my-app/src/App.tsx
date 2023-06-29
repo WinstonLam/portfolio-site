@@ -12,12 +12,12 @@ function App() {
       <Header />
       <div className="Content">
         <Home />
-     
+
         <Element className="hero">
           <Hero />
         </Element>
-        {/* div with height of 500px */}
-        <div style={{ height: '500px' }}></div>
+
+
       </div>
     </div>
   );

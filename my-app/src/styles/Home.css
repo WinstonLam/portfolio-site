@@ -149,9 +149,14 @@
     padding: 0;
     z-index: 0;
   }
+  .home-box1-desc .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 
-  .home-box1-desc .button {
-    width: 35%;
+  .home-box1-desc .about-button {
+    width: 100%;
     min-width: 80px;
     max-width: 180px;
     height: 80%;
@@ -174,6 +179,38 @@
     align-items: center;  /* Vertically align text */
     justify-content: center; /* Horizontally align text */
     transition: all 0.05s ease-in-out;
+}
+
+.home-box1-desc .intouch-button{
+    margin-right: 10%;
+    min-width: 80px;
+    max-width: 180px;
+    height: 80%;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: clamp(8px, 2vw, 20px);
+    color: var(--third-color);
+    text-decoration: none;
+    transition: all 0.05s ease-in-out;
+}
+
+.home-box1-desc .intouch-button .arrow {
+    border: solid black;
+    margin: 0 0 0 5%;
+    border-width: 0 3px 3px 0;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+.home-box1-desc .button-wrapper{
+    display: flex;
+    width: 26%;
 }
 
 .home-box1-desc .button:hover {

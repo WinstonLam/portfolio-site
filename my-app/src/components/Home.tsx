@@ -36,10 +36,16 @@ const Hero = () => {
                                     Specializing in full-stack development, cloud computing, and blockchain.
                                 </p>
                             </div>
-                            <div>
-                                <Link to="hero" smooth={true} duration={1000}>
-                                    <button className="button">About Me</button>
+                            <div className="buttons">
+                                <Link className="button-wrapper" to="hero" smooth={true} duration={1000}>
+                                    <button className="about-button">About Me</button>
                                 </Link>
+
+                                <button className="intouch-button">
+                                    Get In Touch <i className="arrow" />
+                                </button>
+
+
 
                             </div>
 
