@@ -1,5 +1,5 @@
 .home{
-    background-color: var(--second-color);
+    background-color: rgb(var(--second-color));
     height: 100vh;
     width: 100%;
     display: flex;
@@ -27,7 +27,7 @@
     flex-direction: column;
     height: 50%;
     width: 100%;
-    color: var(--third-color);
+    color: rgb(var(--third-color));
     grid-area: 1 / 1 / 2 / 3; 
 }
 .home-box2 { 
@@ -69,20 +69,20 @@
 }
 
 .color1{
-    background-color: var(--second-color);
+    background-color: rgb(var(--second-color));
 
 }
 
 .color2{
-    background-color: var(--primary-color);
+    background-color: rgb(var(--primary-color));
 }
 
 .color3{
-    background-color: var(--third-color);
+    background-color: rgb(var(--third-color));
 }
 
 .color4{
-    background-color: var(--fourth-color);
+    background-color: rgb(var(--fourth-color));
 }
 
 .home-box1-greet .text{
@@ -98,7 +98,7 @@
 }
 
 .highlight{
-    color: var(--primary-color);
+    color: rgb(var(--primary-color));
 }
 
 .home-box1-desc{
@@ -124,7 +124,7 @@
     width: 80%;
     padding-bottom: 80%;  /* maintain aspect ratio */
     border-radius: 50%;  /* make it a circle */
-    background-color: var(--second-color); 
+    background-color: rgb(var(--second-color)); 
     box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.3),
                 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -162,11 +162,11 @@
     height: 80%;
     max-height: 43px;
     position: relative;
-    background-color: var(--second-color);
+    background-color: rgb(var(--second-color));
     border: 2px solid black;
     border-radius: 30px;
-    box-shadow: var(--primary-color) -4px 4px 0 0;
-    color: var(--primary-color);
+    box-shadow: rgb(var(--primary-color)) -4px 4px 0 0;
+    color: rgb(var(--primary-color));
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
@@ -198,10 +198,10 @@
     cursor: pointer;
     font-weight: 600;
     font-size: clamp(8px, 2vw, 20px);
-    color: var(--third-color);
+    color: rgb(var(--third-color));
     display: inline-block;
     padding-bottom:2px;
-    background-image: linear-gradient(var(--primary-color) 0 0);
+    background-image: linear-gradient(rgb(var(--primary-color)) 0 0);
     background-position: 0 80%; /*OR bottom left*/
     background-size: 0% 2px;
     background-repeat: no-repeat;
@@ -211,7 +211,7 @@
 }
 
 .home-box1-desc .intouch-button:hover{
-    color: var(--primary-color);
+    color: rgb(var(--primary-color));
     background-position: 100% 80%; /*OR bottom right*/
     background-size: 100% 2px;
 }
@@ -258,7 +258,7 @@
 }
 
 .home-box1-desc .button:hover {
-    background-color: var(--second-color) ;
+    background-color: rgb(var(--second-color) );
 }
 
 .home-box1-desc .button:active  {

@@ -1,9 +1,9 @@
 :root {
-  --primary-color: rgb(4, 66, 14);
-  --second-color: rgb(239, 238, 227);
-  --third-color: rgb(130, 132, 86);
-  --fourth-color: rgb(0, 116, 153);
-  --fifth-color: rgb(255, 255, 255);
+  --primary-color: 4, 66, 14;
+  --second-color:239, 238, 227;
+  --third-color: 130, 132, 86;
+  --fourth-color: 0, 116, 153;
+  --fifth-color: 255, 255, 255;
 }
 
 .App {
@@ -33,7 +33,7 @@
 }
 
 .App-header {
-  background-color: var(--primary-color);
+  background-color: rgb(var(--primary-color));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
