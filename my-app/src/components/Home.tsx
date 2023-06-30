@@ -1,11 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import ParticlesBackdrop from "./ParticlesBackdrop";
 import { Link } from 'react-scroll';
+import arrowImage from '../images/right-arrow.svg';
 
 
 import "../styles/Home.css";
 
 const Hero = () => {
+    const [hovered, setHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHovered(false);
+    };
+
+
     return (
         <>
 
@@ -41,9 +53,22 @@ const Hero = () => {
                                     <button className="about-button">About Me</button>
                                 </Link>
 
-                                <button className="intouch-button">
-                                    Get In Touch <i className="arrow" />
+                                <div className="intouch-button-wrapper">
+
+                                <button className="intouch-button"
+                                        onMouseEnter={handleMouseEnter} 
+                                        onMouseLeave={handleMouseLeave}
+                                        onClick={(e) => {
+                                            window.location.href = "mailto:winston.lam@outlook.com";
+                                            e.preventDefault();
+                                        }}>
+                                    Get In Touch
                                 </button>
+                                <img className={hovered ? 'arrow-hover': 'arrow'} src={arrowImage} alt="arrow" />
+                                <img className={hovered ? 'arrow2-hover': 'arrow2'} src={arrowImage} alt="arrow" />
+                                <img className={hovered ? 'arrow3-hover': 'arrow3'}src={arrowImage} alt="arrow" />
+                                </div>
+                                
 
 
 
