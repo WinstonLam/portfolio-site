@@ -3,13 +3,18 @@ import '../styles/Selector.css';
 
 interface SelectorProps {
     boxNames?: string[];
+    onChange?: (index: number) => void;
+
 }
 
-const Selector: React.FC<SelectorProps> = ({ boxNames = [] }) => {
+const Selector: React.FC<SelectorProps> = ({ boxNames = [], onChange }) => {
     const [boxNumber, setBoxNumber] = useState<number>(0);
 
     const handleBoxClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>, index: number) => {
         setBoxNumber(index);
+        if (onChange) {
+            onChange(index);
+        }
     };
 
     return (

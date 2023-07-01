@@ -1,6 +1,6 @@
 .selector{
     width: 90%;
-    height: 10%;
+    height: 100%;
     max-height: 75px;
     overflow: scroll;
     display: flex;
@@ -12,7 +12,6 @@
     height: 90%;
     display: flex;
     align-items: end;
-
 }
 
 .selector-box{
