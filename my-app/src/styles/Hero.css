@@ -42,14 +42,14 @@
     text-align: end;
     width: 80%;
     font-size: clamp(15px, 2vw, 35px);
-    color: rgb(var(--fourth-color));
+    color: rgb(var(--primary-color));
 }
 .hero-box2-inner .text {
     margin-right: 20%;
     text-align: end;
     width: 70%;
     font-size: clamp(14px, 2vw, 25px);
-    color: rgb(var(--primary-color));
+    color: rgb(var(--third-color));
 }
 
 .hero-box1{

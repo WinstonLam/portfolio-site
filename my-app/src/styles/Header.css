@@ -1,5 +1,5 @@
 .header-box1 h1{
-    color: #04420E;
+    color: rgb(var(--primary-color));
     font-size: 20px;
 }
 .header{
@@ -38,7 +38,7 @@
     width: 25px;
     height: 4px;
     border-radius: 3px;
-    background-color: #04420E;
+    background-color: rgb(var(--primary-color));;
     margin-top: 5px;
     transition: all 0.3s ease-in-out;
   }

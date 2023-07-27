@@ -12,6 +12,7 @@
     height: 90%;
     display: flex;
     align-items: end;
+    color: rgb(var(--third-color))
 }
 
 .selector-box{
@@ -27,11 +28,9 @@
     
 }
 
-
 .selector-box-active {
     background-color: rgba(var(--fourth-color), 0.3);
-    color: rgb(var(--second-color));
-
+    color: rgb(var(--primary-color));
     font-size: clamp(18px, 2vw, 22px);
 }
 

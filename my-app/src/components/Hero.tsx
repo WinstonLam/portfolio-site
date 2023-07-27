@@ -1,8 +1,21 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState } from 'react';
+import Colors from './Colors'
 import "../styles/Hero.css";
 
-const Hero = () => {
+type Theme = {
+    primary: string;
+    second: string;
+    third: string;
+    fourth: string;
+    fifth: string;
+};
+
+type ColorsProps = {
+    changeTheme: (newTheme: Theme) => void;
+};
+
+
+const Hero: React.FC<ColorsProps> = ({ changeTheme }) => {
     const [loaded, setLoaded] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -32,13 +45,7 @@ const Hero = () => {
             </div>
             <div className="hero-box2">
                 <div className="hero-box2-inner">
-                    <div className="colors" >
-                        <div className="color4" />
-                        <div className="color2" />
-                        <div className="color1" />
-                        <div className="color3" />
-
-                    </div>
+                    <Colors changeTheme={changeTheme} />
                     <div className="title">
                         <h1>About Me</h1>
                     </div>

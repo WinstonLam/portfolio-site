@@ -1,12 +1,25 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ParticlesBackdrop from "./ParticlesBackdrop";
 import { Link } from 'react-scroll';
 import arrowImage from '../images/right-arrow.svg';
+import Colors from './Colors'
 
 
 import "../styles/Home.css";
 
-const Hero = () => {
+type Theme = {
+    primary: string;
+    second: string;
+    third: string;
+    fourth: string;
+    fifth: string;
+};
+
+type ColorsProps = {
+    changeTheme: (newTheme: Theme) => void;
+};
+
+const Hero: React.FC<ColorsProps> = ({ changeTheme }) => {
     const [hovered, setHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -29,12 +42,7 @@ const Hero = () => {
 
                     <div className="home-box1">
                         <div className="home-box1-greet">
-                            <div className="colors" >
-                                <div className="color3" />
-                                <div className="color2" />
-                                <div className="color1" />
-                                <div className="color4" />
-                            </div>
+                            <Colors changeTheme={changeTheme} />
                             <div className="text">
                                 <p>Hi there!</p>
                             </div>
@@ -55,20 +63,20 @@ const Hero = () => {
 
                                 <div className="intouch-button-wrapper">
 
-                                <button className="intouch-button"
-                                        onMouseEnter={handleMouseEnter} 
+                                    <button className="intouch-button"
+                                        onMouseEnter={handleMouseEnter}
                                         onMouseLeave={handleMouseLeave}
                                         onClick={(e) => {
                                             window.location.href = "mailto:winston.lam@outlook.com";
                                             e.preventDefault();
                                         }}>
-                                    Get In Touch
-                                </button>
-                                <img className={hovered ? 'arrow-hover': 'arrow'} src={arrowImage} alt="arrow" />
-                                <img className={hovered ? 'arrow2-hover': 'arrow2'} src={arrowImage} alt="arrow" />
-                                <img className={hovered ? 'arrow3-hover': 'arrow3'}src={arrowImage} alt="arrow" />
+                                        Get In Touch
+                                    </button>
+                                    <img className={hovered ? 'arrow-hover' : 'arrow'} src={arrowImage} alt="arrow" />
+                                    <img className={hovered ? 'arrow2-hover' : 'arrow2'} src={arrowImage} alt="arrow" />
+                                    <img className={hovered ? 'arrow3-hover' : 'arrow3'} src={arrowImage} alt="arrow" />
                                 </div>
-                                
+
 
 
 

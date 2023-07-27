@@ -24,12 +24,12 @@ const Resume = () => {
                 <div className="resume-box1-selector">
                     <Selector boxNames={["VWO", "BSc IS", "MSc SE"]} onChange={setEducation} />
                 </div>
-              
+
                 <div className="resume-box1-inner" >
                     <div className="resume-box1-inner-title">
 
-                
-                        
+
+
                         <div className={`resume-box1-content${education === 0 ? '-active' : ''}`} >
                             <h1> <span className="highlight1">VWO Degree </span>- <span className="highlight">Veluws College Walterbosch</span></h1>
                             <h4>September 2011 - June 2017</h4>
@@ -46,56 +46,56 @@ const Resume = () => {
                         </div>
                     </div>
 
-                    <div className="resume-box1-inner-content">
-                        {education === 0 &&
-                            <dl>
-                                <dd>Attended the highest high school education in The Netherlands</dd>
-                                <dd>Continued having classes in Java, HTML, CSS, Adobe programs and more</dd>
-                                <dd>Graduated with a GPA of 7</dd>
-                            </dl>
-                        }
 
-                        {education === 1 &&
-                            <dl>
-                                <dd>Studied Information Science at the University of Amsterdam</dd>
-                                <dd>Attended courses about Information System Modelling, Machine Learning, Python, Big Data and SQL</dd>
-                                <dd>Attended a minor program E-commerce and Online Business at the Vrije Universiteit Amsterdam</dd>
-                            </dl>
-                        }
-
-                        {education === 2 &&
-                            <dl>
-                                <dd>Studied Software Engineering at the University of Amsterdam</dd>
-                                <dd>Attended courses about Compiler Construction, Cyberphysical Software Systems, Cloud Computing,<br /> Software Testing, C, Haskell, and Javascript</dd>
-
-                            </dl>
-                        }
-
-
+                    <div className={`resume-box1-inner-content${education === 0 ? '-active' : ''}`} >
+                        <dl>
+                            <dd>Attended the highest high school education in The Netherlands</dd>
+                            <dd>Continued having classes in Java, HTML, CSS, Adobe programs and more</dd>
+                            <dd>Graduated with a GPA of 7</dd>
+                        </dl>
                     </div>
+
+                    <div className={`resume-box1-inner-content${education === 1 ? '-active' : ''}`} >
+                        <dl>
+                            <dd>Studied Information Science at the University of Amsterdam</dd>
+                            <dd>Attended courses about Information System Modelling, Machine Learning, Python, Big Data and SQL</dd>
+                            <dd>Attended a minor program E-commerce and Online Business at the Vrije Universiteit Amsterdam</dd>
+                        </dl>
+                    </div>
+
+                    <div className={`resume-box1-inner-content${education === 2 ? '-active' : ''}`} >
+                        <dl>
+                            <dd>Studied Software Engineering at the University of Amsterdam</dd>
+                            <dd>Attended courses about Compiler Construction, Cyberphysical Software Systems, Cloud Computing,<br /> Software Testing, C, Haskell, and Javascript</dd>
+
+                        </dl>
+                    </div>
+
+
+
                 </div>
 
             </div>
             <div className="resume-box2">
-            <div className="resume-box1-title">
+                <div className="resume-box1-title">
                     <h1>Work Experience</h1>
                 </div>
                 <div className="resume-box1-selector">
-                    <Selector boxNames={["Schiphol Airport Retail", "Originals"]} onChange={setWork} />
+                    <Selector boxNames={["SAR", "Originals"]} onChange={setWork} />
                 </div>
-              
+
                 <div className="resume-box1-inner" >
                     <div className="resume-box1-inner-title">
 
-                
-                        
+
+
                         <div className={`resume-box1-content${work === 0 ? '-active' : ''}`} >
                             <h1> <span className="highlight1">Schiphol Airport Retail </span>- <span className="highlight">Sales Representitive</span></h1>
                             <h4>September 2017 - February 2020</h4>
                         </div>
 
                         <div className={`resume-box1-content${work === 1 ? '-active' : ''}`} >
-                            <h1> <span className="highlight1">Originals </span>- <span className="highlight">Co-Founder</span></h1>
+                            <h1> <span className="highlight1">Originals </span>- <span className="highlight">Co-Founder & Chief of Operations</span></h1>
                             <h4>December 2019 - Present</h4>
                         </div>
 
@@ -105,24 +105,26 @@ const Resume = () => {
                         </div> */}
                     </div>
 
-                    <div className="resume-box1-inner-content">
-                        {work === 0 &&
-                            <dl>
-                                <dd>Attended the highest high school education in The Netherlands</dd>
-                                <dd>Continued having classes in Java, HTML, CSS, Adobe programs and more</dd>
-                                <dd>Graduated with a GPA of 7</dd>
-                            </dl>
-                        }
 
-                        {work === 1 &&
-                            <dl>
-                                <dd>Studied Information Science at the University of Amsterdam</dd>
-                                <dd>Attended courses about Information System Modelling, Machine Learning, Python, Big Data and SQL</dd>
-                                <dd>Attended a minor program E-commerce and Online Business at the Vrije Universiteit Amsterdam</dd>
-                            </dl>
-                        }
+                    <div className={`resume-box1-inner-content${work === 0 ? '-active' : ''}`} >
 
-                        {/* {education === 2 &&
+                        <dl>
+                            <dd>Provided high-quality customer service in a fast-paced airport setting, demonstrating effective communication and problem-solving skills.
+                                Managed cash transactions and inventory with keen attention to detail. Collaborated effectively within a team to meet sales goals.
+                                Developed resilience and adaptability skills, transferable to software engineering roles.</dd>
+                        </dl>
+                    </div>
+
+                    <div className={`resume-box1-inner-content${work === 1 ? '-active' : ''}`} >
+                        <dl>
+                            <dd>Co-founded and currently oversee a thriving restaurant, applying strategic planning and leadership skills. Implement various
+                                software systems for workflow optimization and operational efficiency. Maintain high standards in daily operations while
+                                ensuring customer satisfaction. Utilize multitasking and team management abilities, fostering skills transferable to software
+                                engineering and project management.</dd>
+                        </dl>
+                    </div>
+
+                    {/* {education === 2 &&
                             <dl>
                                 <dd>Studied Software Engineering at the University of Amsterdam</dd>
                                 <dd>Attended courses about Compiler Construction, Cyberphysical Software Systems, Cloud Computing,<br /> Software Testing, C, Haskell, and Javascript</dd>
@@ -131,7 +133,7 @@ const Resume = () => {
                         } */}
 
 
-                    </div>
+
                 </div>
 
             </div>
