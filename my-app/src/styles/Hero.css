@@ -9,11 +9,7 @@
 }
 
 .hero-inner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: flex;
     height: 100%;
     width: 100%;
     max-width: 1250px;
@@ -53,7 +49,7 @@
 }
 
 .hero-box1{
-    grid-area: 1 / 1 / 2 / 2; 
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -62,9 +58,9 @@
 }
 
 .hero-box2{
-    grid-area: 1 / 2 / 2 / 4;
+
     height: 100%;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
