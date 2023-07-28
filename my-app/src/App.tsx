@@ -44,7 +44,7 @@ function App() {
       <Load />
       <Header />
       <div className="Content">
-        <Home changeTheme={changeTheme} />
+        <Home currentTheme={theme} changeTheme={changeTheme} />
 
         <Element className="hero">
           <Hero changeTheme={changeTheme} />

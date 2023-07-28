@@ -3,7 +3,7 @@ import ParticlesBackdrop from "./ParticlesBackdrop";
 import { Link } from 'react-scroll';
 import arrowImage from '../images/right-arrow.svg';
 import Colors from './Colors'
-
+import ArrowSvg from "../images/arrow-svg";
 
 import "../styles/Home.css";
 
@@ -17,9 +17,12 @@ type Theme = {
 
 type ColorsProps = {
     changeTheme: (newTheme: Theme) => void;
+    currentTheme: Theme;
 };
 
-const Hero: React.FC<ColorsProps> = ({ changeTheme }) => {
+
+
+const Hero: React.FC<ColorsProps> = ({ currentTheme, changeTheme }) => {
     const [hovered, setHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -72,9 +75,11 @@ const Hero: React.FC<ColorsProps> = ({ changeTheme }) => {
                                         }}>
                                         Get In Touch
                                     </button>
-                                    <img className={hovered ? 'arrow-hover' : 'arrow'} src={arrowImage} alt="arrow" />
-                                    <img className={hovered ? 'arrow2-hover' : 'arrow2'} src={arrowImage} alt="arrow" />
-                                    <img className={hovered ? 'arrow3-hover' : 'arrow3'} src={arrowImage} alt="arrow" />
+                                    <ArrowSvg className={hovered ? 'arrowsvg1-hover' : 'arrowsvg1'} />
+                                    <ArrowSvg className={hovered ? 'arrowsvg2-hover' : 'arrowsvg2'} />
+                                    <ArrowSvg className={hovered ? 'arrowsvg3-hover' : 'arrowsvg3'} />
+
+
                                 </div>
 
 

@@ -195,36 +195,38 @@
     background-size: 100% 2px;
 }
 
-.home-box1-desc .intouch-button-wrapper .arrow,
-.home-box1-desc .intouch-button-wrapper .arrow2,
-.home-box1-desc .intouch-button-wrapper .arrow3{
-    height: 40%;
+
+.arrowsvg1,
+.arrowsvg2,
+.arrowsvg3{
+    height: 45%;
     width: 6%;
     transition: all 0.3s ease-in-out;
-    filter: invert(53%) sepia(7%) saturate(1900%) hue-rotate(24deg) brightness(93%) contrast(84%);
+    fill: rgb(var(--third-color));
 }
 
-.home-box1-desc .intouch-button-wrapper .arrow2 {
+.arrowsvg2 {
     opacity: 0;
     transform: translateX(-50%);
 }
 
-.home-box1-desc .intouch-button-wrapper .arrow3 {
+.arrowsvg3 {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.home-box1-desc .intouch-button-wrapper .arrow-hover,
-.home-box1-desc .intouch-button-wrapper .arrow2-hover,
-.home-box1-desc .intouch-button-wrapper .arrow3-hover{
-    height: 40%;
+
+.arrowsvg1-hover,
+.arrowsvg2-hover,
+.arrowsvg3-hover{
+    height: 45%;
     width: 6%;
     transition: all 0.3s ease-in-out;
-    filter: invert(18%) sepia(18%) saturate(2289%) hue-rotate(80deg) brightness(102%) contrast(101%);
+    fill: rgb(var(--primary-color));
 }
 
-.home-box1-desc .intouch-button-wrapper .arrow2-hover,
-.home-box1-desc .intouch-button-wrapper .arrow3-hover {
+.arrowsvg2-hover,
+.arrowsvg3-hover{
     opacity: 1;
     transform: translateX(0%);
 }
