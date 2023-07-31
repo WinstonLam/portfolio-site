@@ -93,7 +93,7 @@ const Hero: React.FC<ColorsProps> = ({ currentTheme, changeTheme }) => {
                         <div className="home-box2-circle">
 
                         </div>
-                        <img src={require("../images/programming.png")} alt="programming" />
+                        <img src={require("../images/mac.gif")} alt="mac" />
                     </div>
                 </div>
             </div>

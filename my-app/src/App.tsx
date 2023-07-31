@@ -7,6 +7,8 @@ import Home from './components/Home'
 import Resume from './components/Resume'
 import Load from './components/Load'
 import Projects from './components/Projects'
+import SideLines from './components/SideLines';
+import SubProjects from './components/SubProjects';
 import { Link, Element } from 'react-scroll';
 
 type Theme = {
@@ -43,7 +45,10 @@ function App() {
     <div className="App">
       <Load />
       <Header />
+      <SideLines />
       <div className="Content">
+
+
         <Home currentTheme={theme} changeTheme={changeTheme} />
 
         <Element className="hero">
@@ -56,6 +61,10 @@ function App() {
 
         <Element className="projects">
           <Projects />
+        </Element>
+
+        <Element className="subprojects">
+          <SubProjects />
         </Element>
 
 

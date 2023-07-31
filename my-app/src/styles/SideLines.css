@@ -1,0 +1,139 @@
+
+
+.side-lines{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.side-lines-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.side-lines-left, .side-lines-right{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.side-lines-content-right, .side-lines-content-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.side-lines-content-left{
+    margin-right: 40px;
+}
+
+.side-lines-left{
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+
+.side-lines-right{
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.side-lines-fullline{
+    width: 3px;
+    height: 100%;
+    background-color: rgb(var(--primary-color));
+}
+
+.side-lines-icons, .side-lines-mail{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-lines-icons{
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: translateX(-15px);
+}
+
+.side-lines-mail{
+    width: 2px;
+    transform: rotate(90deg);
+}
+
+.side-lines-icons .githubsvg, 
+.side-lines-icons .linkedinsvg,
+.side-lines-icons .instagramsvg{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    stroke: rgb(var(--primary-color));
+}
+
+
+.side-lines-icons .githubsvg:hover,
+.side-lines-icons .linkedinsvg:hover,
+.side-lines-icons .instagramsvg:hover{
+    stroke: rgb(var(--third-color));
+    transform: translateY(-3px);
+}
+
+
+.side-lines-mail p{
+    font-size: clamp(15px, 2vh, 25px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: rgb(var(--primary-color));
+}
+
+.side-lines-mail p:hover{
+    color: rgb(var(--third-color));
+    transform: translateX(-3px);
+}
+
+.side-lines-left-contentline1, .side-lines-right-contentline1 {
+    width: 2px;
+    height: 20%;
+    background-color: rgb(var(--primary-color));
+}
+
+.side-lines-left-contentline2, .side-lines-right-contentline2 {
+    width: 2px;
+    height: 60%;
+    background-color: rgb(var(--primary-color));
+} 
+
+.side-lines-left-contentline2 {
+    width: 2px;
+    height: 80%;
+    background-color: rgb(var(--primary-color));
+}
+
+@media (max-width: 900px) {
+    .side-lines{
+        display: none;
+    }
+}
+
+@media (min-width: 1250px) {
+
+    .side-lines-left{
+        padding-left: 3%;
+    }
+    
+    .side-lines-right{
+        padding-right: 3%;
+    }
+
+}

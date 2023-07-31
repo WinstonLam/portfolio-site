@@ -1,0 +1,116 @@
+.subprojects{
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+.subprojects-inner{
+    width: 100%;
+    height: 80%;
+    max-width: 1250px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.subprojects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    overflow: scroll;
+    height: 100%; 
+    width: 100%;
+    min-height: 550px;
+}
+
+.subprojects-grid-item{
+    display: flex;
+    padding: 0 25px 0 25px;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10%;
+    width: 70%;
+    height: 100%;
+    max-height: 350px;
+    overflow: scroll;
+    border: 2px solid rgb(var(--primary-color));
+    border-radius: 1rem;
+    color: rgb(var(--fourth-color));
+    box-shadow: rgb(var(--primary-color)) -4px 4px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.subprojects-grid-item:hover{
+    box-shadow: none;
+    transform: translate(-4px, 5px);
+    color: rgb(var(--primary-color));
+}
+
+.subprojects-grid-item .title{
+    display: flex;
+    height: 30px;
+    margin: -15px 0 0 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subprojects-grid-item::-webkit-scrollbar,
+.subprojects-grid::-webkit-scrollbar{
+    display: none;
+}
+
+.subprojects-grid-item h1{
+    color:  rgb(var(--primary-color));
+    font-weight: 500;
+}
+
+.subprojects-grid-item p{
+    color:  rgb(var(--third-color));
+    font-weight: 300;
+    margin: 20px 0 0 30px;
+}
+.subprojects-grid-item h2{
+    font-weight: 400;
+}
+
+.subprojects-grid-item-footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 3% 0 0 -5%;
+}
+
+.subprojects-grid-item-tags{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.subprojects-grid-item-tags p{
+    margin: 0;
+    color:  rgb(var(--fourth-color));
+}
+
+.subprojects-grid-item .githubsvg{
+    width: 30px;
+    margin-right: 50px;
+    stroke: rgb(var(--fourth-color));
+}
+
+.subprojects-grid-item .githubsvg:hover{
+    stroke: rgb(var(--primary-color));
+   
+}
+
+.subprojects-grid-item .closing-brackets{
+    margin-top: 10px;
+}

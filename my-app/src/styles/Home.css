@@ -1,11 +1,11 @@
 .home{
-    background-color: rgb(var(--second-color));
     height: 100vh;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .home-inner {
@@ -100,9 +100,9 @@
 
 .home-box2 img{
     position: absolute;
-    width: 15%;
-    max-width: 210px;
-    min-width: 70px;
+    width: 20%;
+    max-width: 385px;
+    min-width: 150px;
 }
 
 .particles-container {
@@ -235,7 +235,7 @@
 
 .home-box1-desc .button-wrapper{
     display: flex;
-    width: 26%;
+    width: 30%;
 }
 
 .home-box1-desc .button:hover {

@@ -1,11 +1,11 @@
 .projects{
-    background-color: rgb(var(--second-color));
-    height: 150vh;
-    width: 100%;
+    height: 200vh;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 .projects-inner{
     width: 100%;
@@ -168,11 +168,11 @@
     margin: 1% 0 0 0;
     width: 6%;
     transition: all 0.3s ease-in-out;
-    stroke: rgb(var(--third-color));
+    stroke: rgb(var(--primary-color));
     cursor: pointer;
 }
 
 .githubsvg:hover{
-    stroke: rgb(var(--primary-color));
+    stroke: rgb(var(--third-color));
    
 }

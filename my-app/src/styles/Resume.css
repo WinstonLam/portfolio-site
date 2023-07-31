@@ -1,11 +1,11 @@
 .resume{
-    background-color: rgb(var(--second-color));
     height: 200vh;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .resume-inner{
