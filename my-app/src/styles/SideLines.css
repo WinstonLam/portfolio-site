@@ -70,23 +70,28 @@
     transform: rotate(90deg);
 }
 
-.side-lines-icons .githubsvg, 
+.icon-container {
+    display: inline-block;
+    position: relative;
+    height: 50px; 
+}
+
+.side-lines-icons .githubsvg,
 .side-lines-icons .linkedinsvg,
-.side-lines-icons .instagramsvg{
+.side-lines-icons .instagramsvg {
     width: 30px;
-    height: 30px;
-    margin-bottom: 10px;
-    cursor: pointer;
+    position: absolute;
+    bottom: 0;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
     stroke: rgb(var(--primary-color));
 }
 
-
-.side-lines-icons .githubsvg:hover,
-.side-lines-icons .linkedinsvg:hover,
-.side-lines-icons .instagramsvg:hover{
+.icon-container:hover .githubsvg,
+.icon-container:hover .linkedinsvg,
+.icon-container:hover .instagramsvg {
+    bottom: 10px;
     stroke: rgb(var(--third-color));
-    transform: translateY(-3px);
 }
 
 
@@ -99,7 +104,7 @@
 
 .side-lines-mail p:hover{
     color: rgb(var(--third-color));
-    transform: translateX(-3px);
+    margin-right: 10px;
 }
 
 .side-lines-left-contentline1, .side-lines-right-contentline1 {

@@ -1,5 +1,5 @@
 .resume{
-    height: 200vh;
+    padding: 150px 0px 150px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -24,11 +24,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
-.resume-box2{
-    margin-top: -400px;
-}
 
 .resume-box1-title{
     display: flex;
@@ -55,16 +53,20 @@
 }
 
 .resume-box1-inner-title{
+    font-size: clamp(10px, 2vw, 15px);
     margin-left: 10%;
+    font-weight: 300;
     text-align: left;
 }
 
 .resume-box1-title h1{
-    font-size: clamp(28px, 2vw, 35px);
-    color: rgb(var(--fourth-color));
+    font-size: clamp(30px, 2vw, 35px);
+    width: 80%;
+    color: rgb(var(--primary-color));
     font-weight: 600;
     transition: all 0.3s ease-in-out;
 }
+
 
 .resume-box1-inner .highlight1{
     color: rgb(var(--fourth-color));
@@ -92,8 +94,9 @@
     margin-left: 10%;
     text-align: left;
     width: 75%;
-    height: 100%;
+    height: 30%;
     overflow: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -101,19 +104,23 @@
 }
 
 .resume-box1-inner-content-active::-webkit-scrollbar, .resume-box1-inner-content::-webkit-scrollbar {
-    display: none;
+    display: auto;
+    width: 5px;
+    border-radius: 2rem;
+    background-color: rgb(var(--primary-color));
   }
+
 
 dd {
     display: list-item;
     list-style-type: "🤯";
     line-height: 300%;
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(12px, 2vw, 16px);
     padding-inline-start: 1ch;
     transition: all 0.3s ease-in-out;
     background-color: transparent;
     background-repeat: no-repeat;
-
+    padding-right: 5%;
   }
 
 dd:hover{
@@ -131,5 +138,11 @@ dd:hover{
     100% {opacity: 0;}
   }
   
+  @media (max-width: 500px){
+    
+.resume-box1-inner-content-active{
+    margin-left: 0;
+}
+  }
 
 

@@ -1,5 +1,5 @@
 .projects{
-    height: 200vh;
+    padding: 50px 0px 150px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -15,6 +15,12 @@
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
+    text-align: left;
+}
+
+.projects-inner h1{
+    font-size: clamp(30px, 2vw, 40px);
+    width: 60%;
 }
 
 .projects-box1, .projects-box2 {
@@ -36,10 +42,31 @@
     min-width: 450px;
     padding-left: 3%;
     z-index: 1;
-    color: rgb(var(--third-color));
+   
     margin-right: -10%; /* adjust as necessary to create the desired overlap */
     text-align: left;
 }
+
+.projects-box1-content-title, .projects-box2-content-title{
+    font-size: clamp(20px , 2vw, 25px);
+    font-weight: 900;
+    color: rgb(var(--fourth-color));
+}
+
+.projects-box1-content-sub, .projects-box2-content-sub{
+    color: rgb(var(--primary-color));
+    margin-top: -20px;
+    font-size: clamp(15px , 2vw, 16px);
+    font-weight: 600;
+}
+
+.projects-box1-content-desc, .projects-box2-content-desc{
+    color: rgb(var(--third-color));
+
+    font-size: clamp(10px , 2vw, 16px);
+    font-weight: 300;
+}
+
 
 .projects-box2-content{
     text-align: right;
@@ -83,6 +110,8 @@
     display: flex;
     width: 100%;
     margin: 3% 0 0 -5%;
+    align-items: center;
+    color: rgb(var(--fourth-color));
 }
 
 .projects-box2-content-footer{
@@ -128,31 +157,47 @@
 @media (max-width: 750px) {
     .projects-box1-content, .projects-box2-content {
         display: flex;
+        padding: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 60%;
         max-width: 550px;
         min-width: 350px;
-        margin:0;
+        margin: 50px 0 50px 0;
         z-index: 1;
         color: rgb(var(--third-color));
         text-align: left;
+        align-items: flex-start;
+    }
+    .projects-box1-content-title, .projects-box1-content-sub,
+    .projects-box2-content-title, .projects-box2-content-sub{
+        margin: 0 0 -5% 0;
     }
 
     .projects-box1-content-desc, .projects-box2-content-desc{
         background-color: transparent;
+        padding: 3% 5% 5% 5%;
+        color:rgb(var(--primary-color));
+        font-weight: 400;
+        font-size: 11px;
+        box-shadow: none;
+        text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.3);
     }
 
     .projects-box1-circle, .projects-box2-circle {
         position: absolute;
-        left: 10px;
+        transform: translateX(-55px);
         min-width: 300px;
-        top:0;
-     
+        top: 10px;
+        z-index: -1;
     }
     .projects-box1, .projects-box2 {
         position: relative;
+        margin-left: 20%;
+    }
+    .projects-box1-circle::after, .projects-box2-circle::after{
+        background: rgba(var(--second-color), 0.8); 
     }
 }
 
@@ -168,7 +213,7 @@
     margin: 1% 0 0 0;
     width: 6%;
     transition: all 0.3s ease-in-out;
-    stroke: rgb(var(--primary-color));
+    stroke: rgb(var(--fourth-color));
     cursor: pointer;
 }
 

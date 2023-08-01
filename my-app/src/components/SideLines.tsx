@@ -11,9 +11,16 @@ const SideLines = () => {
                     <div className='side-lines-content-left'>
                         <div className="side-lines-left-contentline1"></div>
                         <div className='side-lines-icons'>
-                            <GithubSvg className="githubsvg" />
-                            <LinkedInSvg className="linkedinsvg" />
-                            <InstagramSvg className="instagramsvg" />
+
+                            <div className="icon-container">
+                                <GithubSvg className="githubsvg" />
+                            </div>
+                            <div className="icon-container">
+                                <LinkedInSvg className="linkedinsvg" />
+                            </div>
+                            <div className="icon-container">
+                                <InstagramSvg className="instagramsvg" />
+                            </div>
                         </div>
                         <div className="side-lines-left-contentline2"></div>
                     </div>
