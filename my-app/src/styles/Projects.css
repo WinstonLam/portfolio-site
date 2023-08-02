@@ -1,5 +1,5 @@
 .projects{
-    padding: 50px 0px 150px;
+    padding: 50px 0px 100px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -18,9 +18,13 @@
     text-align: left;
 }
 
-.projects-inner h1{
-    font-size: clamp(30px, 2vw, 40px);
-    width: 60%;
+.projects-inner-title{
+    margin: 0 0 -8% 20%;
+    text-align: left;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 800;
+    width: 100%;
+    color: rgb(var(--third-color));
 }
 
 .projects-box1, .projects-box2 {
@@ -42,7 +46,6 @@
     min-width: 450px;
     padding-left: 3%;
     z-index: 1;
-   
     margin-right: -10%; /* adjust as necessary to create the desired overlap */
     text-align: left;
 }

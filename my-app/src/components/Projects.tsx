@@ -6,7 +6,9 @@ const Projects = () => {
         <>
 
             <div className="projects-inner">
-                <h1>My Projects</h1>
+                <div className="projects-inner-title">
+                    <h1>03. <span className="highlight"> My Projects </span></h1>
+                </div>
 
                 <div className="projects-box1">
                     <div className="projects-box1-content">

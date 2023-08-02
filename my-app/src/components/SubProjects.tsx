@@ -5,7 +5,7 @@ const SubProjects = () => {
     return (
         <div className='subprojects'>
             <div className='subprojects-inner'>
-                <h1>Sub Projects</h1>
+                <h1>Additional Projects</h1>
                 <div className='subprojects-grid'>
                     <div className='subprojects-grid-item'>
                         <div className='grid-item-content'>

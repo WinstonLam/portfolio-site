@@ -17,6 +17,9 @@ const Resume = () => {
 
     return (
         <div className="resume-inner">
+            <div className="resume-inner-title">
+                <h1>02. <span className="highlight"> Experience </span></h1>
+            </div>
             <div className="resume-box1">
                 <div className="resume-box1-title">
                     <h1>My Education</h1>

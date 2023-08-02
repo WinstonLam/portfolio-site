@@ -31,7 +31,6 @@
 .selector-box-active {
     background-color: rgba(var(--fourth-color), 0.3);
     color: rgb(var(--primary-color));
-    font-size: clamp(18px, 2vw, 22px);
 }
 
 .selector-box:hover{
@@ -85,4 +84,16 @@
   width: 10px;
   background-color: var(--third-color);
 
+}
+
+@media (max-width: 768px) {
+    .selector-box{
+        min-width: 100px;
+    }
+    .selector-bar-wrapper{
+        width: 100%;
+    }
+    .selection-bar{
+        width: 100px;
+    }
 }

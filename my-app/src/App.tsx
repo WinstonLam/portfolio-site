@@ -9,6 +9,7 @@ import Load from './components/Load'
 import Projects from './components/Projects'
 import SideLines from './components/SideLines';
 import SubProjects from './components/SubProjects';
+import Contact from './components/Contact';
 import { Link, Element } from 'react-scroll';
 
 type Theme = {
@@ -65,6 +66,10 @@ function App() {
 
         <Element className="subprojects">
           <SubProjects />
+        </Element>
+
+        <Element className="contact">
+          <Contact changeTheme={changeTheme} />
         </Element>
 
 

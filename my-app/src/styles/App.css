@@ -24,6 +24,20 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(var(--second-color));
+  transition: all 0.3s ease-in-out;
+}
+body::-webkit-scrollbar{
+  display: auto;
+  width: 7.5px;
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 2rem;
+  background-color: rgb(var(--primary-color));
+}
+
+body::-webkit-scrollbar-track{
+  background-color:rgb(var(--second-color));
 }
 
 @media (prefers-reduced-motion: no-preference) {

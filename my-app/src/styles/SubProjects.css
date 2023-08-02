@@ -17,6 +17,11 @@
     flex-direction: column;
 }
 
+.subprojects-inner h1{
+    color: rgb(var(--primary-color));
+    margin-bottom: 5%;
+}
+
 .subprojects-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

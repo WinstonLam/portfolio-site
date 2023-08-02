@@ -47,7 +47,7 @@ const Hero: React.FC<ColorsProps> = ({ changeTheme }) => {
                 <div className="hero-box2-inner">
                     <Colors changeTheme={changeTheme} />
                     <div className="title">
-                        <h1>About Me</h1>
+                        <h1>01.<span className='highlight'> About Me </span></h1>
                     </div>
                     <div className="text">
                         <p>I am a Software Enineer graduated at the University of Amsterdam.</p>
