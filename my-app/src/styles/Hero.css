@@ -14,6 +14,7 @@
     height: 100%;
     width: 100%;
     max-width: 1250px;
+    min-height: 780px;
     align-items: center;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .hero-box2-inner .colors{
-    margin-right: 19%;
+    
     display: flex;
     justify-content: end;
     width: 110%;
@@ -35,7 +36,7 @@
 }
 
 .hero-box2-inner .title{
-    margin-right: 20%;
+    margin-right: 3%;
     text-align: end;
     width: 80%;
     font-size: clamp(15px, 2vw, 35px);
@@ -47,12 +48,52 @@
 }
 
 .hero-box2-inner .text {
-    margin-right: 20%;
+    margin: -5% 3% 0 0;
     text-align: end;
-    width: 70%;
-    font-size: clamp(14px, 2vw, 25px);
+    width: 100%;
+    font-size: clamp(12px, 2vw, 20px);
     color: rgb(var(--third-color));
 }
+.hero-box2-inner .tech{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.hero-box2-inner .tech ul{
+    margin-right: 10%;
+    text-align: right;
+    direction: rtl;
+    
+}
+
+
+hr {
+    height: 1px;
+    width: 90%;
+    background: rgb(var(--primary-color)); /* this will change the line color */
+    margin-right: 0;
+  }
+
+.highlight2{
+    color: rgb(var(--fourth-color));
+    cursor: pointer;
+    background-image: linear-gradient(rgb(var(--fourth-color)) 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.highlight2:hover{
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+
 
 .hero-box1{
     width: 50%;
@@ -61,19 +102,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    order: 1;
 }
 
 .hero-box2{
     height: 100%;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    order: 2;
 }
 
 .hero-circle {
-    margin: 0 0 0 5%;
+    margin: 0 20% 0 0;
     z-index: 0;
     width: 80%;
     border-radius: 50%;
@@ -156,3 +199,48 @@
     animation: fadeInFromBottom 2s ease-out forwards;
   }
   
+
+  @media (max-width: 600px){
+    .hero{
+        padding: 150px 0px 100px;
+    }
+    .hero-inner{
+        flex-direction: column;
+    }
+    .hero-box1{
+        margin-top: 50px;
+        order: 2;
+        width: 90%;
+    }
+
+    .hero-box2{
+        order: 1;
+        width: 90%;
+        
+    }
+    .hero-circle{
+        width: 75%
+    }
+    .hero-box2-inner .colors{
+        margin-right: 0;    
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    .hero-box2-inner .title, .hero-box2-inner .text, .hero-box2-inner .tech ul{
+        margin-right: 8%;
+        text-align: left;
+        width: 90%;
+    }
+
+    .hero-box2-inner .tech ul{
+        direction: ltr;
+    }
+
+    hr{
+        margin-left: 0;
+    }
+
+ 
+
+}

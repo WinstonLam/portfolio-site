@@ -11,8 +11,8 @@
     margin: 0 2% 0 2%;
     width: 5%;
     height: 12%;
-    min-width: 30px;
-    min-height: 9px;
+    min-width: 50px;
+    min-height: 15px;
     border-radius: 2rem;
     box-shadow: -1.5px 1.5px 0px 1.5px rgba(0, 0, 0, 0.374);
     transition: all 0.3s ease-in-out;
@@ -38,4 +38,22 @@
 
 .color4{
     background-color: rgb(0, 116, 153);
+}
+
+@media (max-width: 600px){
+
+    .colors{
+        margin-bottom: 20px;
+    }
+    .color1, .color2, .color3, .color4{
+        min-height: 25px;
+        min-width: 25px;
+        width: 6%;
+        
+    }
+    .color2, .color3, .color4{
+        margin-left: 20px;
+    }
+
+
 }

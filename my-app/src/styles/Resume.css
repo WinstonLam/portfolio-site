@@ -162,6 +162,13 @@ dd:hover{
     100% {opacity: 0;}
   }
   
+  @media (max-width: 600px){
+    .resume{
+        padding: 100px 0px 50px;
+    }
+}
+
+
   @media (max-width: 500px){
     
 .resume-box1-inner-content-active{

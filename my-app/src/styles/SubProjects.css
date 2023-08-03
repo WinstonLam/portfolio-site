@@ -24,6 +24,7 @@
 
 .subprojects-grid{
     display: grid;
+    padding: 10px;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     overflow: scroll;
@@ -40,7 +41,7 @@
     flex-direction: column;
     text-align: left;
     width: 70%;
-    height: 350px;
+    height: 300px;
     overflow: scroll;
     border: 2px solid rgb(var(--primary-color));
     border-radius: 1rem;
@@ -85,15 +86,18 @@
 .subprojects-grid-item h1{
     color:  rgb(var(--primary-color));
     font-weight: 500;
+    font-size: clamp(25px, 2vw, 30px);
 }
 
 .subprojects-grid-item p{
     color:  rgb(var(--third-color));
     font-weight: 300;
+    font-size: clamp(12px, 2vw, 16px);
     margin: 20px 0 0 30px;
 }
 .subprojects-grid-item h2{
     font-weight: 400;
+    font-size: clamp(18px, 2vw, 20px);
 }
 
 .subprojects-grid-item-footer{
@@ -145,12 +149,37 @@
 
     .subprojects-grid-item{
         width: 50%;
+        height: 280px;
+        overflow: hidden;
     }
 }
 
+
+
 @media (max-width: 500px) {
-    .subprojects-grid-item{
-        width: 80%;
+    .subprojects{
+        padding:0;
     }
+    .subprojects-grid-item{
+        padding: 0 10px 0 10px;
+        height: 220px;
+        min-height: 220px;
+        min-width: 190px;
+        overflow: hidden;
+    }
+    .subprojects-grid-item .title{
+        height: 20px;
+        margin: -10px 0 0 5px;
+    }
+    .subprojects-grid-item p{
+        margin: 10px 0 0 10px;
+    }
+    .subprojects-grid-item-footer{
+        margin: 0 0 0 -5%;
+    }
+    .subprojects-grid-item .closing-brackets{
+        margin-top: 0;
+    }
+   
 }
     

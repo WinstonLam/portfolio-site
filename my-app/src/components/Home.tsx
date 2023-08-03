@@ -24,6 +24,7 @@ type ColorsProps = {
 
 const Hero: React.FC<ColorsProps> = ({ currentTheme, changeTheme }) => {
     const [hovered, setHovered] = useState(false);
+    const [circleHovered, setCircleHovered] = useState(false);
 
     const handleMouseEnter = () => {
         setHovered(true);
@@ -89,8 +90,10 @@ const Hero: React.FC<ColorsProps> = ({ currentTheme, changeTheme }) => {
 
                         </div>
                     </div>
-                    <div className="home-box2">
-                        <div className="home-box2-circle">
+                    <div className={"home-box2" + (circleHovered ? " hovered" : "")}>
+                        <div className="home-box2-circle"
+                            onMouseEnter={() => setCircleHovered(true)}
+                            onMouseLeave={() => setCircleHovered(false)}>
 
                         </div>
                         <img src={require("../images/mac.gif")} alt="mac" />

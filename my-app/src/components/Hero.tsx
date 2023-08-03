@@ -50,7 +50,39 @@ const Hero: React.FC<ColorsProps> = ({ changeTheme }) => {
                         <h1>01.<span className='highlight'> About Me </span></h1>
                     </div>
                     <div className="text">
-                        <p>I am a Software Enineer graduated at the University of Amsterdam.</p>
+                        <p>Hello! I'm Winston, a Software Engineer specializing in multidisciplinary systems.
+                            My passion was ignited in 2019, combining my work in the restaurant industry
+                            with my studies at the University of Amsterdam. This experience highlighted
+                            the potential of software systems to improve workflows, an idea central
+                            to my bachelor's thesis.
+                            <br />
+                            <hr />
+                            I've been fascinated by technology since high school, leading me to graduate
+                            from <span className='highlight2'>Veluws College Walterbosch</span> in 2017.
+                            My interest in leveraging computers to solve real-world problems led me to study
+                            <span className='highlight2'> Information Science</span> at the
+                            University of Amsterdam, where I earned my bachelor's degree in 2020.
+                            Keen to enhance my <span className='highlight2'>Software Engineering</span> skills, I continued at the
+                            same university for my master's degree. My ongoing pursuit of knowledge
+                            reflects my commitment to harness software to effect real-world change.
+                            <br />
+                            <br />
+                            Some technologies I have worked with include:
+
+                        </p>
+                        <div className="tech">
+                            <ul>
+                                <li>JavaScript (ES6+)</li>
+                                <li>TypeScript</li>
+                                <li>React</li>
+                            </ul>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
