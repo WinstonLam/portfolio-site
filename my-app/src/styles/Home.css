@@ -28,6 +28,7 @@
     width: 60%;
     color: rgb(var(--third-color));
     order: 1;
+    transition: all 0.3s ease-in-out;
 }
 .home-box2 { 
     display: flex;
@@ -67,6 +68,7 @@
 
 .highlight{
     color: rgb(var(--primary-color));
+    transition: all 0.3s ease-in-out;
 }
 
 .home-box1-desc{

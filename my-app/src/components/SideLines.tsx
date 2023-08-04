@@ -13,7 +13,7 @@ const SideLines = () => {
                         <div className='side-lines-icons'>
 
                             <div className="icon-container">
-                                <GithubSvg className="githubsvg" />
+                                <GithubSvg className="githubsvg" link="https://github.com/WinstonLam" />
                             </div>
                             <div className="icon-container">
                                 <LinkedInSvg className="linkedinsvg" />

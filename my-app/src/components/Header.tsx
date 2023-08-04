@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
 
+
 import '../styles/Header.css';
 import '../styles/Nav.css';
 
@@ -31,6 +32,8 @@ const Header = () => {
     setPrevScrollPos(currentScrollPos);
     setVisible(visible);
   };
+
+
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -89,7 +92,8 @@ const Header = () => {
               </div>
 
 
-              <button className="resume-button">Resume</button>
+              <button className="resume-button"
+                onClick={() => window.open(require('../images/CV.pdf'), "_blank")}>Resume</button>
 
 
             </div>
@@ -127,8 +131,12 @@ const Header = () => {
                   </Link>
                 </div>
 
-                <button className="resume-button">Resume</button>
-              </div>
+                <button
+                  className="resume-button"
+                  onClick={() => window.open(require('../images/CV.pdf'), "_blank")}
+                >
+                  Resume
+                </button>              </div>
             </div>
             <div className={`side-nav-filter ${isChecked ? 'checked' : ''}`} onClick={handleOnClick} />
 

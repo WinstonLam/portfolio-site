@@ -16,6 +16,7 @@
     max-width: 1250px;
     min-height: 780px;
     align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-box2-inner{
@@ -25,6 +26,7 @@
     align-items: end;
     flex-direction: column;
     justify-content: end;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-box2-inner .colors{
@@ -41,10 +43,12 @@
     width: 80%;
     font-size: clamp(15px, 2vw, 35px);
     color: rgb(var(--third-color));
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-box2-inner .title .highlight{
     color: rgb(var(--primary-color));
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-box2-inner .text {
@@ -53,6 +57,7 @@
     width: 100%;
     font-size: clamp(12px, 2vw, 20px);
     color: rgb(var(--third-color));
+    transition: all 0.3s ease-in-out;
 }
 .hero-box2-inner .tech{
     
@@ -65,7 +70,20 @@
     margin-right: 10%;
     text-align: right;
     direction: rtl;
-    
+    list-style: none;
+}
+
+.hero-box2-inner .tech ul li{
+    display: flex;
+    color: rgb(var(--fourth-color));
+}
+
+.bullet-svg {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    margin: 1px 0 0 10px; /* Creates some space between the SVG and the text */
+    transform: rotate(180deg);
+    fill: rgb(var(--primary-color));
 }
 
 

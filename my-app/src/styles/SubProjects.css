@@ -65,7 +65,7 @@
 .subprojects-grid-item .title{
     display: flex;
     height: 30px;
-    margin: -15px 0 0 15px;
+    margin: -5px 0 0 15px;
     align-items: center;
     justify-content: space-between;
 }
@@ -162,17 +162,17 @@
     }
     .subprojects-grid-item{
         padding: 0 10px 0 10px;
-        height: 220px;
+        height: 245px;
         min-height: 220px;
         min-width: 190px;
         overflow: hidden;
     }
     .subprojects-grid-item .title{
         height: 20px;
-        margin: -10px 0 0 5px;
+        margin: 0 0 0 5px;
     }
     .subprojects-grid-item p{
-        margin: 10px 0 0 10px;
+        margin: 13px 0 0 10px;
     }
     .subprojects-grid-item-footer{
         margin: 0 0 0 -5%;

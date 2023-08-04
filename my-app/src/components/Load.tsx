@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Load.css";
+import LoadingCircle from "./LoadingCircle";
 
 const Load = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -7,7 +8,7 @@ const Load = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 2400);
+        }, 1800);
 
         // Cleanup function to clear the timeout if the component unmounts before the 3 seconds.
         return () => clearTimeout(timer);
@@ -15,7 +16,9 @@ const Load = () => {
 
     return (
         <div className={`load-wrapper ${isLoading ? "" : "load-wrapper-completed"}`}>
-            <div className="circle"></div>
+            <div className="circle">
+                <LoadingCircle />
+            </div>
             <h1 className="loading-text">WL</h1>
         </div>
     );

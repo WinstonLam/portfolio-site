@@ -3,10 +3,11 @@ import React from 'react';
 
 type ArrowSvgProps = {
     className: string;
+    link: string;
 };
 
-const GithubSvg: React.FC<ArrowSvgProps> = ({ className }) => (
-    <div className={className} onClick={() => window.location.href = 'https://github.com/WinstonLam'}
+const GithubSvg: React.FC<ArrowSvgProps> = ({ className, link }) => (
+    <div className={className} onClick={() => window.location.href = link}
     >
         <svg stroke-width="1.5"
             viewBox="0 0 24 24"

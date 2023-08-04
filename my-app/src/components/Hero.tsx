@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Colors from './Colors'
 import "../styles/Hero.css";
+import ArrowSvg from '../images/arrow-svg';
 
 type Theme = {
     primary: string;
@@ -72,17 +73,16 @@ const Hero: React.FC<ColorsProps> = ({ changeTheme }) => {
                         </p>
                         <div className="tech">
                             <ul>
-                                <li>JavaScript (ES6+)</li>
-                                <li>TypeScript</li>
-                                <li>React</li>
+                                <li><ArrowSvg className="bullet-svg" />JavaScript</li>
+                                <li><ArrowSvg className="bullet-svg" />TypeScript</li>
+                                <li><ArrowSvg className="bullet-svg" />React</li>
                             </ul>
                             <ul>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>Python</li>
+                                <li><ArrowSvg className="bullet-svg" />Node.js</li>
+                                <li><ArrowSvg className="bullet-svg" />C / C#</li>
+                                <li><ArrowSvg className="bullet-svg" />Python</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
