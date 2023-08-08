@@ -1,4 +1,4 @@
-.header.hidden{
+.header.hidden, .hamburger.hidden{
     transform: translateY(-150%);
 }
 
@@ -35,12 +35,6 @@
     align-items: center;
 }
 
-.header-box3 {
-    display: flex;
-    justify-content: end;
-    width: 50%;
-    align-items: center;
-}
 
 .header-box1-logo{
     position: absolute;
@@ -136,13 +130,31 @@
     transform: translate(-4px, 4px);
 }
 
-.header-box3 .resume-button{
+.side-nav-inner .resume-button{
     margin-top: 10%;
     background-color: transparent;
+    font-size: clamp(20px, 2vw, 25px);
+    line-height: 35px;
+    margin-top: 10%;
+    height: 8%;
 }
 
+
 .hamburger{
-    z-index: 101;
+    display: flex;
+    transform: translateY(0);
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    align-items: end;
+    right: 5%;
+    top: 3%;
+    height: 10%;
+    z-index: 104;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger.hidden.checked{
+    transform: translateY(0%);
 }
 
 .hamburger div {

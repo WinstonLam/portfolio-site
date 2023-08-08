@@ -188,6 +188,7 @@
     .projects-box1-content-title, .projects-box1-content-sub,
     .projects-box2-content-title, .projects-box2-content-sub{
         margin: 0 0 -5% 0;
+        width: 90%;
     }
 
     .projects-box1-content-desc, .projects-box2-content-desc{
@@ -214,6 +215,13 @@
     .projects-box1-circle::after, .projects-box2-circle::after{
         background: rgba(var(--second-color), 0.8); 
     }
+
+    .projects-box1-content-footer, .projects-box2-content-footer{
+        font-size: 12px;
+        width: 90%;
+        justify-content: center;
+    }
+
 }
 
 .projects-box-content-tags{

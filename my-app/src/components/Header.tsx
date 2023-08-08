@@ -65,28 +65,28 @@ const Header = () => {
 
               <div className='header-box2-inner-box'>
                 <Link className="button-wrapper" to="hero" smooth={true} duration={1000}
-                  onClick={handleOnClick}>
+                >
                   <p>01. <span className='highlight'> About Me </span> </p>
                 </Link>
               </div>
 
               <div className='header-box2-inner-box'>
                 <Link className="button-wrapper" to="resume" smooth={true} duration={1000}
-                  onClick={handleOnClick}>
+                >
                   <p>02. <span className='highlight'>  Work </span></p>
                 </Link>
               </div>
 
               <div className='header-box2-inner-box'>
                 <Link className="button-wrapper" to="projects" smooth={true} duration={1000}
-                  onClick={handleOnClick}>
+                >
                   <p>03. <span className='highlight'> Projects </span></p>
                 </Link>
               </div>
 
               <div className='header-box2-inner-box'>
                 <Link className="button-wrapper" to="contact" smooth={true} duration={1000}
-                  onClick={handleOnClick}>
+                >
                   <p>04. <span className='highlight'> Contact</span></p>
                 </Link>
               </div>
@@ -99,55 +99,57 @@ const Header = () => {
             </div>
           </div>
 
-          <div className='header-box3'>
-            <div className={`side-nav ${isChecked ? 'checked' : ''}`} >
-              <div className="side-nav-inner">
 
-                <div className="side-nav-inner-box" >
-                  <Link className="button-wrapper" to="hero" smooth={true} duration={1000}
-                    onClick={handleOnClick}>
-                    <p>01. <br /> <span className='highlight'> About Me </span> </p>
-                  </Link>
-                </div>
 
-                <div className="side-nav-inner-box">
-                  <Link className="button-wrapper" to="resume" smooth={true} duration={1000}
-                    onClick={handleOnClick}>
-                    <p>02. <br /> <span className='highlight'>  Work </span></p>
-                  </Link>
-                </div>
-
-                <div className="side-nav-inner-box">
-                  <Link className="button-wrapper" to="projects" smooth={true} duration={1000}
-                    onClick={handleOnClick}>
-                    <p>03. <br /> <span className='highlight'> Projects </span></p>
-                  </Link>
-                </div>
-
-                <div className="side-nav-inner-box">
-                  <Link className="button-wrapper" to="contact" smooth={true} duration={1000}
-                    onClick={handleOnClick}>
-                    <p>04. <br /> <span className='highlight'> Contact</span></p>
-                  </Link>
-                </div>
-
-                <button
-                  className="resume-button"
-                  onClick={() => window.open(require('../images/CV.pdf'), "_blank")}
-                >
-                  Resume
-                </button>              </div>
-            </div>
-            <div className={`side-nav-filter ${isChecked ? 'checked' : ''}`} onClick={handleOnClick} />
-
-            <div className={`hamburger ${isChecked ? 'checked' : ''}`} onClick={handleOnClick}>
-              <div className="top-bun"></div>
-              <div className="meat"></div>
-              <div className="bottom-bun"></div>
-            </div>
-          </div>
         </div>
       </div>
+
+      <div className={`hamburger ${visible ? "" : "hidden"} ${isChecked ? 'checked' : ''}`} onClick={handleOnClick}>
+        <div className="top-bun"></div>
+        <div className="meat"></div>
+        <div className="bottom-bun"></div>
+      </div>
+
+      <div className={`side-nav ${isChecked ? 'checked' : ''}`} >
+        <div className="side-nav-inner">
+
+          <div className="side-nav-inner-box" >
+            <Link className="button-wrapper" to="hero" smooth={true} duration={1000}
+              onClick={handleOnClick}>
+              <p>01. <br /> <span className='highlight'> About Me </span> </p>
+            </Link>
+          </div>
+
+          <div className="side-nav-inner-box">
+            <Link className="button-wrapper" to="resume" smooth={true} duration={1000}
+              onClick={handleOnClick}>
+              <p>02. <br /> <span className='highlight'>  Work </span></p>
+            </Link>
+          </div>
+
+          <div className="side-nav-inner-box">
+            <Link className="button-wrapper" to="projects" smooth={true} duration={1000}
+              onClick={handleOnClick}>
+              <p>03. <br /> <span className='highlight'> Projects </span></p>
+            </Link>
+          </div>
+
+          <div className="side-nav-inner-box">
+            <Link className="button-wrapper" to="contact" smooth={true} duration={1000}
+              onClick={handleOnClick}>
+              <p>04. <br /> <span className='highlight'> Contact</span></p>
+            </Link>
+          </div>
+
+          <button
+            className="resume-button"
+            onClick={() => window.open(require('../images/CV.pdf'), "_blank")}
+          >
+            Resume
+          </button>              </div>
+      </div>
+      <div className={`side-nav-filter ${isChecked ? 'checked' : ''}`} onClick={handleOnClick} />
+
 
 
     </>
