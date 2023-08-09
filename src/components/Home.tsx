@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ParticlesBackdrop from "./ParticlesBackdrop";
 import { Link } from 'react-scroll';
 import arrowImage from '../images/right-arrow.svg';
 import Colors from './Colors'
