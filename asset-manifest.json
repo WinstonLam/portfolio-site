@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4dbfea32.css",
+    "main.css": "/static/css/main.a60feec2.css",
     "main.js": "/static/js/main.e3fe82af.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/pf.jpeg": "/static/media/pf.c87486551b5dd6f3fa31.jpeg",
@@ -10,12 +10,12 @@
     "static/media/CV.pdf": "/static/media/CV.78ad122aa69812cb0249.pdf",
     "static/media/WordleExample.png": "/static/media/WordleExample.26626ecb8301b78e542f.png",
     "index.html": "/index.html",
-    "main.4dbfea32.css.map": "/static/css/main.4dbfea32.css.map",
+    "main.a60feec2.css.map": "/static/css/main.a60feec2.css.map",
     "main.e3fe82af.js.map": "/static/js/main.e3fe82af.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dbfea32.css",
+    "static/css/main.a60feec2.css",
     "static/js/main.e3fe82af.js"
   ]
 }
