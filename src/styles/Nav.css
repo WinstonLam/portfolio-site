@@ -56,7 +56,7 @@
 
 
 @media (min-width: 900px) {
-    .header-box3 {
+    .hamburger{
       display: none;
     }
   }
