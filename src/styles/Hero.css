@@ -139,6 +139,7 @@ hr {
     width: 80%;
     border-radius: 50%;
     backdrop-filter: blur(10px);
+    position: relative;
 }
 
 .hero-circle::after{
