@@ -69,7 +69,8 @@ const Resume = () => {
                     <div className={`resume-box1-inner-content${education === 2 ? '-active' : ''}`} >
                         <dl>
                             <dd>Studied Software Engineering at the University of Amsterdam</dd>
-                            <dd>Attended courses about Compiler Construction, Cyberphysical Software Systems, Cloud Computing,<br /> Software Testing, C, Haskell, and Javascript</dd>
+                            <dd>Attended courses about Compiler Construction, Cloud Computing, Software Testing and more</dd>
+                            <dd>Graduated with a GPA of 7.5</dd>
 
                         </dl>
                     </div>
@@ -84,7 +85,7 @@ const Resume = () => {
                     <h1>Work Experience</h1>
                 </div>
                 <div className="resume-box1-selector">
-                    <Selector boxNames={["SAR", "Originals"]} onChange={setWork} />
+                    <Selector boxNames={["SAR", "CargoLedger", "Originals"]} onChange={setWork} />
                 </div>
 
                 <div className="resume-box1-inner" >
@@ -96,8 +97,13 @@ const Resume = () => {
                             <h1> <span className="highlight1">Schiphol Airport Retail </span>- <span className="highlight">Sales Representitive</span></h1>
                             <h4>September 2017 - February 2020</h4>
                         </div>
-
                         <div className={`resume-box1-content${work === 1 ? '-active' : ''}`} >
+                            <h1> <span className="highlight1">CargoLedger </span>- <span className="highlight">Blockchain Developer Intern</span></h1>
+                            <h4>April 2023 - August 2023</h4>
+                        </div>
+
+
+                        <div className={`resume-box1-content${work === 2 ? '-active' : ''}`} >
                             <h1> <span className="highlight1">Originals </span>- <span className="highlight">Co-Founder & Chief of Operations</span></h1>
                             <h4>December 2019 - Present</h4>
                         </div>
@@ -117,8 +123,15 @@ const Resume = () => {
                                 Developed resilience and adaptability skills, transferable to software engineering roles.</dd>
                         </dl>
                     </div>
-
                     <div className={`resume-box1-inner-content${work === 1 ? '-active' : ''}`} >
+                        <dl>
+                            <dd>At CargoLedger, a premier logistics firm known for blockchain solutions, I researched consensus mechanisms with an emphasis 
+                                on partial migration strategies. I sharpened my skills in Solidity, smart contract development, and Ethereum-Polygon communication, 
+                                contributing to the company's advanced blockchain integration in logistics.</dd>
+                        </dl>
+                    </div>
+
+                    <div className={`resume-box1-inner-content${work === 2 ? '-active' : ''}`} >
                         <dl>
                             <dd>Co-founded and currently oversee a thriving restaurant, applying strategic planning and leadership skills. Implement various
                                 software systems for workflow optimization and operational efficiency. Maintain high standards in daily operations while
