@@ -138,8 +138,22 @@
 dd {
     display: list-item;
     list-style-type: "🤯";
-    line-height: 300%;
-    font-size: clamp(12px, 2vw, 16px);
+    line-height: 150%;
+    font-size: clamp(15px, 2vw, 16px);
+    font-weight: bold;
+    padding-inline-start: 1ch;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding-right: 5%;
+  }
+
+  dd {
+    display: list-item;
+    list-style-type: "🤯";
+    line-height: 150%;
+    font-size: clamp(15px, 2vw, 16px);
+    font-weight: bold;
     padding-inline-start: 1ch;
     transition: all 0.3s ease-in-out;
     background-color: transparent;

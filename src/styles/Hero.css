@@ -55,7 +55,8 @@
     margin: -5% 3% 0 0;
     text-align: end;
     width: 100%;
-    font-size: clamp(12px, 2vw, 20px);
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: bold;
     color: rgb(var(--third-color));
     transition: all 0.3s ease-in-out;
 }
@@ -79,10 +80,9 @@
 }
 
 .bullet-svg {
-    width: 20px; /* Adjust as needed */
+    width: 15px; /* Adjust as needed */
     height: 20px; /* Adjust as needed */
     margin: 1px 0 0 10px; /* Creates some space between the SVG and the text */
-    transform: rotate(180deg);
     fill: rgb(var(--primary-color));
 }
 
@@ -227,7 +227,7 @@ hr {
         flex-direction: column;
     }
     .hero-box1{
-        margin-top: 50px;
+        margin-top: 30px;
         order: 2;
         width: 90%;
     }
@@ -238,7 +238,7 @@ hr {
         
     }
     .hero-circle{
-        width: 75%
+       margin: 0
     }
     .hero-box2-inner .colors{
         margin-right: 0;    

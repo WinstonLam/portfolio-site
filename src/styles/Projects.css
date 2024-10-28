@@ -179,7 +179,7 @@
         width: 60%;
         max-width: 550px;
         min-width: 350px;
-        margin: 50px 0 50px -40px;
+        margin: -10px 0 50px -40px;
         z-index: 1;
         color: rgb(var(--third-color));
         text-align: left;
@@ -225,7 +225,7 @@
 }
 
 .projects-box-content-tags{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
